@@ -1,4 +1,4 @@
-var myApp = angular.module('spicyApp1', []);
+var myApp = angular.module('index.controller', []);
 
 myApp.controller('SpicyController', ['$scope', function($scope) {
     $scope.spice = 'very';
