@@ -1,23 +1,5 @@
-<!DOCTYPE html>
-<html ng-app>
-  <script src="bower_components/angular/angular.js"></script>
-  <script src="index.js"></script>
-    <head>
-        <meta charset="utf-8" />
-    <link rel="stylesheet" href="style.css" />
-
-    <title> Redirection déphasée </title>
-
-    </head>
-    <header>
-
-        <h1> Bienvenue sur mon site !</h1>
-
-
-        <button ng-click="etOuais();"></button>
-
-        </script>
-
-    </header>
-
-</html>
+<div ng-controller="SpicyController">
+ <button ng-click="chiliSpicy()">Chili</button>
+ <button ng-click="jalapenoSpicy()">Jalapeño</button>
+ <p>The food is {{spice}} spicy!</p>
+</div>
