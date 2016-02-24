@@ -8,5 +8,5 @@ controller('myAppController', function($scope) {
     ];
     $scope.initialList = [1, 2, 3, 4];
     $scope.lodashList = _.chunk($scope.initialList, 2);
-    $scope.anoherLodashList = _.sortBy(users, function(o) { return o.age; });
+    $scope.anoherLodashList = _.sortBy(users, ['user', 'age']);
 });
