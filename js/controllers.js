@@ -1,12 +1,11 @@
 angular.module('myApp.controllers', []).
 controller('myAppController', function($scope) {
-    var users = [
-      { 'user': 'fred', 'age': 48 },
-      { 'user': 'barney', 'age': 36 },
-      { 'user': 'cleme', 'age': 42 },
-      { 'user': 'max', 'age': 34 }
-    ];
     $scope.initialList = [1, 2, 3, 4];
     $scope.lodashList = _.chunk($scope.initialList, 2);
-    $scope.anoherLodashList = _.sortBy(users, ['user', 'age']);
+    $scope.anoherLodashList = _.sortBy([
+      { 'name': 'fred', 'age': 48 },
+      { 'name': 'barney', 'age': 36 },
+      { 'name': 'cleme', 'age': 42 },
+      { 'name': 'max', 'age': 34 }
+    ], ['name', 'age']);
 });
