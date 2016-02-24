@@ -1,3 +1,3 @@
-angular.module('F1FeederApp', [
-  'F1FeederApp.controllers'
+angular.module('myApp', [
+  'myApp.controllers'
 ]);

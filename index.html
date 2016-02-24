@@ -1,25 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>F-1 Feeder</title>
+  <title>myApp</title>
 </head>
 
-<body ng-app="F1FeederApp" ng-controller="driversController">
-  <table>
-    <thead>
-      <tr><th colspan="4">Drivers Championship Standings</th></tr>
-    </thead>
-    <tbody>
-      <tr ng-repeat="driver in driversList">
-        <td>{{$index + 1}}</td>
-        <td>
-          {{driver.Driver.givenName}}&nbsp;{{driver.Driver.familyName}}
-        </td>
-        <td>{{driver.Constructors[0].name}}</td>
-        <td>{{driver.points}}</td>
-      </tr>
-    </tbody>
-  </table>
+<body ng-app="myApp" ng-controller="myAppController">
+  <div>
+    <span> Initial List :</span>
+    <span> {{ initialList }} </span>
+  </div>
+  <div>
+  <span> Chunked with Lodash List :</span>
+  <span> {{ lodashList }} </span>
+  </div>
   <script src="bower_components/angular/angular.js"></script>
   <script src="js/app.js"></script>
   <script src="js/controllers.js"></script>
