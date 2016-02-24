@@ -1,0 +1,17 @@
+{
+  "name": "sraikimaxime.github.io",
+  "homepage": "https://github.com/sraikimaxime/sraikimaxime.github.io",
+  "authors": [
+    "maximesraiki <maximes@theodo.fr>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.5.1",
+    "angular": "^1.5.0"
+  }
+}
